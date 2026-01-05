@@ -8,7 +8,7 @@ const Navbar = () => {
 
         <ul className="flex w-auto flex-row gap-4 md:gap-8 lg:gap-12 xl:gap-14 justify-center items-center text-sm md:text-base lg:text-lg xl:text-xl text-[#3b3b3b]">
           <li className="relative cursor-pointer group">
-            <a href="#about" className="transition-all duration-300 group-hover:text-[#ff6347]">
+            <a href="/#about" className="transition-all duration-300 group-hover:text-[#ff6347]">
               <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-[#ff6347] after:w-0 after:transition-all after:duration-300 group-hover:after:w-full">
                 About
               </span>
@@ -16,7 +16,7 @@ const Navbar = () => {
           </li>
 
           <li className="relative cursor-pointer group">
-            <a href="#projects" className="transition-all duration-300 group-hover:text-[#ff6347]">
+            <a href="/#projects" className="transition-all duration-300 group-hover:text-[#ff6347]">
               <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-[#ff6347] after:w-0 after:transition-all after:duration-300 group-hover:after:w-full">
                 Projects
               </span>
@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
 
           <li className="relative cursor-pointer group">
-            <a href="#contact" className="transition-all duration-300 group-hover:text-[#ff6347]" >
+            <a href="/#contact" className="transition-all duration-300 group-hover:text-[#ff6347]" >
               <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-[#ff6347] after:w-0 after:transition-all after:duration-300 group-hover:after:w-full">
                 Contact
               </span>
