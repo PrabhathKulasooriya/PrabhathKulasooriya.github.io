@@ -6,7 +6,7 @@ import Home from './Components/Home';
 function App() {
 
   return (
-    <div className='w-screen min-h-screen overflow-x-hidden relative'>
+    <div className='max-w-screen min-h-screen overflow-x-hidden relative'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
