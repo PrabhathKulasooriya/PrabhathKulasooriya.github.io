@@ -9,6 +9,7 @@ import {
   Code,
   Database,
   Server,
+  Linkedin,
 } from "lucide-react";
 
 const Home = () => {
@@ -211,38 +212,54 @@ const Home = () => {
         </a>
 
         {/* Contact Details Grid */}
-        <div className="grid md:grid-cols-3 gap-8 text-sm font-mono mt-8 w-full max-w-3xl">
-          <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors">
-            <Phone className="text-mint" />
-            <span>+94 766961896</span>
-          </div>
+        
+          <div className="flex flex-wrap justify-center gap-8 text-sm font-mono mt-8 w-full max-w-4xl">
+                        
+            <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
+              <Phone className="text-mint" />
+              <span>+94 766961896</span>
+            </div>
 
-          <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors">
-            <Mail className="text-mint" />
-            <span>prabhath.kulasooriya@gmail.com</span>
-          </div>
+            <a
+              href="mailto:prabhath.kulasooriya@gmail.com"
+              className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]"
+            >
+              <Mail className="text-mint" />
+              <span>prabhath.kulasooriya@gmail.com</span>
+            </a>
 
-          <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors">
-            <MapPin className="text-mint" />
-            <span className="text-center">Kuliyapitiya, Sri Lanka</span>
-          </div>
+            <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
+              <MapPin className="text-mint" />
+              <span className="text-center">Kuliyapitiya, Sri Lanka</span>
+            </div>
 
-          {/* Centered Github Link */}
-          <a
-            href="https://github.com/PrabhathKulasooriya"
-            target="_blank"
-            rel="noreferrer"
-            className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer md:col-span-3 w-fit mx-auto"
-          >
-            <Github className="text-mint" />
-            <span>github.com/PrabhathKulasooriya</span>
-          </a>
-        </div>
+            <a
+              href="https://github.com/PrabhathKulasooriya"
+              target="_blank"
+              rel="noreferrer"
+              className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer min-w-[200px]"
+            >
+              <Github className="text-mint" />
+              <span>GitHub Profile</span>
+            </a>
+            
+            <a
+              href="https://www.linkedin.com/in/isuru-prabhath-kulasooriya"
+              target="_blank"
+              rel="noreferrer"
+              className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer min-w-[200px]"
+            >
+              <Linkedin className="text-mint" />
+              <span>LinkedIn</span>
+            </a>
+
+          </div>
+      
       </div>
 
       <footer className="py-6 text-center text-xs font-mono text-text">
         <p className="hover:text-mint transition-colors cursor-default">
-          Designed & Built by Isuru Prabhath Kulasooriya
+          Designed & Developed by Isuru Prabhath Kulasooriya
         </p>
       </footer>
     </div>
