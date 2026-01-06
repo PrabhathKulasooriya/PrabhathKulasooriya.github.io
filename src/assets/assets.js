@@ -40,7 +40,7 @@ export const projects = [
     title: "Online Movie Ticket Booking System",
     tech: ["Laravel", "MySQL", "Blade Templates", "Bootstrap"],
     description:
-      "Complete cinema booking system allowing seat selection, show schedules, and payment integration. Includes a robust admin panel for analytics.",
+      "Complete cinema booking system allowing seat selection, show schedules, payment integration, and ticket management. Includes a robust admin panel for analytics and manage movies and showtimes.",
     type: "Full Stack System",
     live_link: "",
     github_repo: "https://github.com/PrabhathKulasooriya/Cineverse-Movie-ticket-booking-website",
