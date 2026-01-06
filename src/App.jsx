@@ -8,8 +8,8 @@ import Test from './Components/Test';
 function App() {
 
   return (
-    <div className='max-w-screen min-h-screen overflow-x-hidden relative'>
-      <ScrollToHash/>
+    <div className="max-w-screen min-h-screen overflow-x-hidden relative bg-primary">
+      <ScrollToHash />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
