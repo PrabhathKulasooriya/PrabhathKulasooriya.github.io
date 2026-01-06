@@ -3,6 +3,7 @@ import image_2 from './2.png';
 import image_3 from './3.png';
 import image_4 from './4.png';
 import image_5 from './5.png';
+import image_6 from './6.png';
 
 export const images = {
   image_1,
@@ -10,6 +11,7 @@ export const images = {
   image_3,
   image_4,
   image_5,
+  image_6
 };
 
 export const projects = [
@@ -44,6 +46,6 @@ export const projects = [
     type: "Full Stack System",
     live_link: "",
     github_repo: "https://github.com/PrabhathKulasooriya/Cineverse-Movie-ticket-booking-website",
-    images: [image_4, image_5],
+    images: [image_4, image_5, image_6],
   },
 ];
