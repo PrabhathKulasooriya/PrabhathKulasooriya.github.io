@@ -22,7 +22,7 @@ export const projects = [
     description:
       "An AI-powered chatbot featuring natural language processing and image generation. Includes real-time chat functionality, secure session management, and Stripe payment integration.",
     type: "Featured Project",
-    live_link: "https://quickgpt-sigma.vercel.app/",
+    live_link: "",
     github_repo: "https://github.com/PrabhathKulasooriya/quickGPT-AI-chatbot",
     images: [image_3],
   },
