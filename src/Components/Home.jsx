@@ -20,6 +20,7 @@ const Home = () => {
       description:
         "An AI-powered chatbot featuring natural language processing and image generation. Includes real-time chat functionality, secure session management, and Stripe payment integration.",
       type: "Featured Project",
+      link: "https://quickgpt-sigma.vercel.app/",
     },
     {
       title: "E-Commerce Website",
@@ -27,6 +28,7 @@ const Home = () => {
       description:
         "A comprehensive e-commerce platform with product management, shopping cart functionality, and a secure admin dashboard for order and user management.",
       type: "Web Application",
+      link: "https://github.com/PrabhathKulasooriya/Fabrilia-clothing-store",
     },
     {
       title: "Online Movie Ticket Booking",
@@ -34,6 +36,7 @@ const Home = () => {
       description:
         "Complete cinema booking system allowing seat selection, show schedules, and payment integration. Includes a robust admin panel for analytics.",
       type: "Full Stack System",
+      link: "https://github.com/PrabhathKulasooriya/Cineverse-Movie-ticket-booking-website",
     },
   ];
 
@@ -162,10 +165,12 @@ const Home = () => {
                   <div className="text-mint">
                     <Code size={40} />
                   </div>
-                  <ExternalLink
-                    size={20}
-                    className="hover:text-mint cursor-pointer"
-                  />
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    <ExternalLink
+                      size={20}
+                      className="hover:text-mint cursor-pointer"
+                    />
+                  </a>
                 </div>
 
                 <h3 className="text-xl font-bold mb-2 text-bright group-hover:text-mint transition-colors">
@@ -212,49 +217,46 @@ const Home = () => {
         </a>
 
         {/* Contact Details Grid */}
-        
-          <div className="flex flex-wrap justify-center gap-8 text-sm font-mono mt-8 w-full max-w-4xl">
-                        
-            <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
-              <Phone className="text-mint" />
-              <span>+94 766961896</span>
-            </div>
 
-            <a
-              href="mailto:prabhath.kulasooriya@gmail.com"
-              className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]"
-            >
-              <Mail className="text-mint" />
-              <span>prabhath.kulasooriya@gmail.com</span>
-            </a>
-
-            <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
-              <MapPin className="text-mint" />
-              <span className="text-center">Kuliyapitiya, Sri Lanka</span>
-            </div>
-
-            <a
-              href="https://github.com/PrabhathKulasooriya"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer min-w-[200px]"
-            >
-              <Github className="text-mint" />
-              <span>GitHub Profile</span>
-            </a>
-            
-            <a
-              href="https://www.linkedin.com/in/isuru-prabhath-kulasooriya"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer min-w-[200px]"
-            >
-              <Linkedin className="text-mint" />
-              <span>LinkedIn</span>
-            </a>
-
+        <div className="flex flex-wrap justify-center gap-8 text-sm font-mono mt-8 w-full max-w-4xl">
+          <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
+            <Phone className="text-mint" />
+            <span>+94 766961896</span>
           </div>
-      
+
+          <a
+            href="mailto:prabhath.kulasooriya@gmail.com"
+            className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]"
+          >
+            <Mail className="text-mint" />
+            <span>prabhath.kulasooriya@gmail.com</span>
+          </a>
+
+          <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
+            <MapPin className="text-mint" />
+            <span className="text-center">Kuliyapitiya, Sri Lanka</span>
+          </div>
+
+          <a
+            href="https://github.com/PrabhathKulasooriya"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer min-w-[200px]"
+          >
+            <Github className="text-mint" />
+            <span>GitHub Profile</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/isuru-prabhath-kulasooriya"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors cursor-pointer min-w-[200px]"
+          >
+            <Linkedin className="text-mint" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
 
       <footer className="py-6 text-center text-xs font-mono text-text">
