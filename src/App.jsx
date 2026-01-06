@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import ScrollToHash from "./Components/ScrollToHash";
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
+import Project from './Components/Project';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<Project />} />
       </Routes>
     </div>
   );

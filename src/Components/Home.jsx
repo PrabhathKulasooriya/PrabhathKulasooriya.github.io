@@ -1,5 +1,5 @@
 import React from "react";
-// 1. ADDED 'Mail' to the imports here:
+import { Link } from "react-router-dom";
 import {
   Github,
   Phone,
@@ -12,33 +12,9 @@ import {
   Linkedin,
 } from "lucide-react";
 
+import { projects } from "../assets/assets.js";
+
 const Home = () => {
-  const projects = [
-    {
-      title: "AI Chatbot",
-      tech: ["MERN Stack", "OpenAI API", "Stripe", "JWT", "Tailwind"],
-      description:
-        "An AI-powered chatbot featuring natural language processing and image generation. Includes real-time chat functionality, secure session management, and Stripe payment integration.",
-      type: "Featured Project",
-      link: "https://quickgpt-sigma.vercel.app/",
-    },
-    {
-      title: "E-Commerce Website",
-      tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-      description:
-        "A comprehensive e-commerce platform with product management, shopping cart functionality, and a secure admin dashboard for order and user management.",
-      type: "Web Application",
-      link: "https://github.com/PrabhathKulasooriya/Fabrilia-clothing-store",
-    },
-    {
-      title: "Online Movie Ticket Booking",
-      tech: ["Laravel", "MySQL", "Blade Templates", "Bootstrap"],
-      description:
-        "Complete cinema booking system allowing seat selection, show schedules, and payment integration. Includes a robust admin panel for analytics.",
-      type: "Full Stack System",
-      link: "https://github.com/PrabhathKulasooriya/Cineverse-Movie-ticket-booking-website",
-    },
-  ];
 
   return (
     <div className="min-h-screen w-full flex flex-col font-sans bg-primary text-text">
@@ -166,12 +142,12 @@ const Home = () => {
                   <div className="text-mint">
                     <Code size={40} />
                   </div>
-                  <a href={project.link} target="_blank" rel="noreferrer">
+                  <Link to={`/project/${project.id}`} rel="noreferrer">
                     <ExternalLink
-                      size={20}
+                      size={30}
                       className="hover:text-mint cursor-pointer"
                     />
-                  </a>
+                  </Link>
                 </div>
 
                 <h3 className="text-xl font-bold mb-2 text-bright group-hover:text-mint transition-colors">
@@ -217,7 +193,7 @@ const Home = () => {
           Say Hello
         </a>
 
-        {/* Contact Details Grid */}
+        {/* Contact Details */}
 
         <div className="flex flex-wrap justify-center gap-8 text-sm font-mono mt-8 w-full max-w-4xl">
           <div className="flex flex-col items-center gap-2 p-4 rounded hover:bg-card transition-colors min-w-[200px]">
