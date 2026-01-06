@@ -3,17 +3,16 @@ import { Routes, Route } from "react-router-dom";
 import ScrollToHash from "./Components/ScrollToHash";
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
-import Test from './Components/Test';
+
 
 function App() {
 
   return (
     <div className="max-w-screen min-h-screen overflow-x-hidden relative bg-primary">
       <ScrollToHash />
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/test" element={<Test />} />
       </Routes>
     </div>
   );

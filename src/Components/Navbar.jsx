@@ -1,47 +1,52 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const { hash } = useLocation();
+
+  // This ensures scrolling works even if you are already on the page
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace("#", ""));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
+  const navLinks = [
+    { name: "About", to: "/#about" },
+    { name: "Education", to: "/#education" },
+    { name: "Projects", to: "/#projects" },
+    { name: "Contact", to: "/#contact" },
+  ];
 
   return (
-    <>
-      <div className="flex flex-row justify-center items-center w-screen h-[60px] shadow-md fixed top-0 left-0  z-50 px-4 md:px-8 lg:px-12 bg-card text-text">
-        <ul className="flex w-auto flex-row gap-4 md:gap-8 lg:gap-12 xl:gap-14 justify-center items-center text-sm md:text-base lg:text-lg xl:text-xl ">
-          <li className="relative cursor-pointer group">
-            <Link
-              to={"/#about"}
-              className="transition-all duration-300 group-hover:text-[#64FFDA]"
-            >
-              <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-[#64FFDA] after:w-0 after:transition-all after:duration-300 group-hover:after:w-full">
-                About
-              </span>
-            </Link>
-          </li>
-
-          <li className="relative cursor-pointer group">
-            <Link
-              to={"/#projects"}
-              className="transition-all duration-300 group-hover:text-[#64FFDA]"
-            >
-              <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-[#64FFDA] after:w-0 after:transition-all after:duration-300 group-hover:after:w-full">
-                Projects
-              </span>
-            </Link>
-          </li>
-
-          <li className="relative cursor-pointer group">
-            <Link
-              to={"/#contact"}
-              className="transition-all duration-300 group-hover:text-[#64FFDA]"
-            >
-              <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-[#64FFDA] after:w-0 after:transition-all after:duration-300 group-hover:after:w-full">
-                Contact
-              </span>
-            </Link>
-          </li>
-        </ul>
+    <div className="fixed w-full top-0 z-50 px-6 py-4 flex justify-between items-center backdrop-blur-sm bg-primary/90 shadow-lg transition-all duration-300">
+      {/* Logo Section */}
+      <div className="text-xl font-bold font-mono text-mint cursor-pointer">
+        <Link to="/">IPK.</Link>
       </div>
-    </>
+
+      {/* Navigation Links */}
+      <ul className="flex flex-row gap-8 text-sm md:text-base font-mono text-bright">
+        {navLinks.map((link, index) => (
+          <li key={index} className="relative cursor-pointer group">
+            <Link
+              to={link.to}
+              className="flex items-center gap-1 transition-all duration-300 group-hover:text-mint"
+            >
+              <span className="text-mint text-xs">0{index + 1}.</span>
+              <span className="relative">
+                {link.name}
+                {/* Your sliding underline animation adapted to Mint color */}
+                <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-mint transition-all duration-300 group-hover:w-full"></span>
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
