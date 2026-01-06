@@ -55,9 +55,10 @@ const Home = () => {
           I build things for the web.
         </h2>
         <p className="max-w-xl text-lg mb-12 leading-relaxed text-text">
-          I am a self-motivated <b>Web Developer Intern</b> and undergraduate at
+          I am a self-motivated <b>Web Developer - Intern</b> and undergraduate at
           UCSC. I specialize in the MERN stack and have a passion for creating
-          clean, efficient code.
+          clean, efficient code. I am always eager to learn and improve my skills.
+          I'm currently looking for internship opportunities to apply my knowledge.
         </p>
 
         <div>
