@@ -4,6 +4,7 @@ import image_3 from './3.png';
 import image_4 from './4.png';
 import image_5 from './5.png';
 import image_6 from './6.png';
+import image_7 from './7.png';
 
 export const images = {
   image_1,
@@ -11,7 +12,8 @@ export const images = {
   image_3,
   image_4,
   image_5,
-  image_6
+  image_6,
+  image_7,
 };
 
 export const projects = [
@@ -24,7 +26,7 @@ export const projects = [
     type: "Featured Project",
     live_link: "",
     github_repo: "https://github.com/PrabhathKulasooriya/quickGPT-AI-chatbot",
-    images: [image_3],
+    images: [image_3, image_7],
   },
   {
     id: 3,
