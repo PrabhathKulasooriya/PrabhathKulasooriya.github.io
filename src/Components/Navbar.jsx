@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full top-0 z-50 px-6 py-4 flex justify-between items-center backdrop-blur-sm bg-primary/90 shadow-lg transition-all duration-300">
+    <div className="fixed w-full top-0 z-50 px-6 py-4 flex justify-between items-center backdrop-blur-sm bg-[primary]/90 shadow-lg transition-all duration-300">
       <div className="text-xl font-bold font-mono text-mint cursor-pointer z-50">
         <Link to="/#about" onClick={() => setIsOpen(false)}>
           IPK.

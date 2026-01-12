@@ -17,7 +17,7 @@ import { projects } from "../assets/assets.js";
 const Home = () => {
 
   return (
-    <div className="min-h-screen w-full flex flex-col font-sans bg-primary text-text">
+    <div className="min-h-screen w-full flex flex-col font-sans bg-[primary] text-text">
       {/* HERO SECTION */}
       <div
         id="about"
