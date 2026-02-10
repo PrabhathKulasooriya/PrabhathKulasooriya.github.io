@@ -5,6 +5,9 @@ import image_4 from './4.png';
 import image_5 from './5.png';
 import image_6 from './6.png';
 import image_7 from './7.png';
+import image_8 from './8.png';
+import image_9 from './9.png';
+import image_10 from './10.png';
 
 export const images = {
   image_1,
@@ -14,17 +17,38 @@ export const images = {
   image_5,
   image_6,
   image_7,
+  image_8,
+  image_9,
+  image_10,
 };
 
 export const projects = [
   {
     id: 1,
+    title: "Foodie – Full-Stack Food Delivery Platform",
+    tech: [
+      "MERN Stack",
+      "Cloudinary",
+      "Stripe & Webhooks",
+      "JWT",
+      "TailwindCSS",
+      "Vercel"
+    ],
+    description:
+      "A comprehensive food delivery system featuring an Admin Dashboard for managing menus and orders with Cloudinary-integrated image uploads. Includes secure user authentication, a persistent cart, and a robust payment flow using Stripe Webhooks.",
+    type: "Featured Project",
+    live_link: "https://foodie-one-sepia.vercel.app/",
+    github_repo: "https://github.com/PrabhathKulasooriya/foodie",
+    images: [image_8, image_9, image_10],
+  },
+  {
+    id: 2,
     title: "AI Chatbot",
     tech: ["MERN Stack", "OpenAI API", "Stripe", "JWT", "Tailwind"],
     description:
       "An AI-powered chatbot featuring natural language processing and image generation. Includes real-time chat functionality, secure session management, and Stripe payment integration.",
     type: "Featured Project",
-    live_link: "",
+    live_link: "https://foodie-one-sepia.vercel.app/",
     github_repo: "https://github.com/PrabhathKulasooriya/quickGPT-AI-chatbot",
     images: [image_3, image_7],
   },
