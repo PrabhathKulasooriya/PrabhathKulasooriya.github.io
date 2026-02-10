@@ -25,7 +25,7 @@ export const images = {
 export const projects = [
   {
     id: 1,
-    title: "Foodie – Full-Stack Food Delivery Platform",
+    title: "FOODIE – Full-Stack Food Delivery Platform",
     tech: [
       "MERN Stack",
       "Cloudinary",
